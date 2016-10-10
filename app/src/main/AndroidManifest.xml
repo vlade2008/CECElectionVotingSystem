@@ -1,0 +1,55 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.xtian.cecelectionvotingsystem">
+
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+
+    <application
+        android:largeHeap="true"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:theme="@style/AppTheme" >
+
+        <activity
+            android:name=".Main_Activity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.default" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".splash" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.xtian.cecelectionvotingsystem.home"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.default" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".CSVreader.FileChooser" android:screenOrientation="portrait" ></activity>
+        <activity android:name=".Edit_View_Candidates.ViewCandidatesActivity" android:screenOrientation="portrait" android:theme="@style/CustomTheme" ></activity>
+        <activity android:name=".Edit_View_Candidates.NewCandidatesActivity" android:screenOrientation="portrait" android:theme="@style/CustomTheme" ></activity>
+        <activity android:name=".Edit_View_Candidates.EditCandidatesAcitivity" android:screenOrientation="portrait" android:theme="@style/CustomTheme" ></activity>
+
+        <activity android:name=".PartyFragment.ViewPartyCandidatesActivity" android:screenOrientation="portrait" android:theme="@style/CustomTheme" ></activity>
+        <activity android:name=".PartyFragment.EditPartyCandidatesAcitivity" android:screenOrientation="portrait" android:theme="@style/CustomTheme" ></activity>
+        <activity android:name=".PartyFragment.NewPartyCandidatesActivity" android:screenOrientation="portrait" android:theme="@style/CustomTheme" ></activity>
+        <activity android:name=".PartyFragment.Party_view_candidates" android:screenOrientation="portrait" android:noHistory="true" ></activity>
+
+        <activity android:name=".ResultFragment.Result_activity" android:screenOrientation="portrait" android:theme="@style/CustomTheme" ></activity>
+    </application>
+</manifest>

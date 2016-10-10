@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/background_listview">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="84dp"
+        android:orientation="horizontal"
+        android:background="@drawable/drop_shadow"
+        android:layout_marginTop="8dp"
+        android:id="@+id/result_Rlayout"
+        android:visibility="gone">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/orange">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Congratiolation!"
+            android:id="@+id/textView10"
+            android:layout_gravity="center"
+            android:fontFamily="@string/font_family"
+            android:textSize="31dp"
+            android:textIsSelectable="false"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="false"
+            android:gravity="center"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentBottom="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="The New CEC OFFICER"
+            android:id="@+id/textView11"
+            android:layout_gravity="center"
+            android:fontFamily="@string/font_family_light"
+            android:textSize="18dp"
+            android:layout_below="@+id/textView10"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="false"
+            android:gravity="center"
+            android:textColor="#ede7f6" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:id="@+id/result_frame">
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/listviewcandidate"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/candidate_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"/>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/candidate_br"
+            android:layout_gravity="center"
+            android:indeterminate="false" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/result_Rlayout_notStart">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:id="@+id/image_note"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="80dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Opps!"
+            android:id="@+id/textview_ops"
+            android:layout_gravity="left|bottom"
+            android:layout_below="@+id/image_note"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Election not yet started!"
+            android:id="@+id/textview_notes"
+            android:layout_gravity="left|bottom"
+            android:layout_below="@+id/textview_ops"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+
+</LinearLayout >

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_header_selector">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="195dp"
+            android:id="@+id/imageView2"
+            android:src="@drawable/logo"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/relativeLayout2">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="225dp"
+                android:layout_height="50dp"
+                android:id="@+id/username"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:hint="Username"
+                android:textColor="#fffef5"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@string/font_family_light"
+                android:textColorHint="#faffff"
+                android:password="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_alignParentStart="true"
+            android:id="@+id/relativeLayout3">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="225dp"
+                android:layout_height="50dp"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/password"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:drawableBottom="#ffff"
+                android:hint="Password"
+                android:textColor="#fffefd"
+                android:fontFamily="@string/font_family_light"
+                android:password="true"
+                android:textColorHint="#fffefb" />
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:text="LOG IN"
+            android:id="@+id/BLogin"
+            android:singleLine="false"
+            android:background="#b2224676"
+            android:textColor="#fdfffa"
+            android:layout_below="@+id/relativeLayout3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/sample12"
+            android:layout_below="@+id/BLogin"
+            android:layout_alignParentStart="true"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

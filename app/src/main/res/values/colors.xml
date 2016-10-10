@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#23538a</color>
+    <!-- navagation bar -->
+
+    <color name="list_item_title">#212121</color>
+    <color name="list_background">#FAFAFA</color>
+    <color name="list_background_pressed">#EDEDED</color>
+    <color name="list_divider">#FAFAFA</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+
+
+
+    <color name="black">#000</color>
+    <color name="orange">#FA0</color>
+    <color name="white">#FFF</color>
+
+    <color name="background_listview_list">#ffffff</color>
+    <color name="background_listview">#FAFAFA</color>
+
+
+
+</resources>
